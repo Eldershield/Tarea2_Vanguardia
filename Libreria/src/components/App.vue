@@ -1,8 +1,10 @@
 <template>
     <div id="app">
       <Header />
+      <main>
       <Libros @agregar="agregarAlCarrito" />
       <Carrito :carrito="carrito" @eliminar="eliminarDelCarrito" />
+    </main>
       <Footer />
     </div>
   </template>
@@ -31,4 +33,5 @@
       }
     }
   };
+  
   </script>
